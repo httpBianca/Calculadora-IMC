@@ -81,8 +81,16 @@ label, p{
 
 
 @media (max-width: 600px){ /*max width é que o quando o valor */
-    section{
-        width: 490px;
-        padding: 12px;
+    body{
+        font-size: smaller;
     }
+    section{
+        width: 400px;
+        padding: 15px;
+        
+    }
+    tbody tr td{
+        padding: 5px 5px;
+    }
+    
 }
