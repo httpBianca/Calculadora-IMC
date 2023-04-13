@@ -4,12 +4,36 @@ function calcular(){
     var peso = document.getElementById('peso').value;
     var alt = document.getElementById('alt').value;
 
-    var imc = peso / (alt*alt);
+    var imc = peso / (alt*alt); //Formula do calculo do indice de masssa corporal (IMC)
     var total = imc.toFixed(2); //deixa com apenas duas casas decimais após virgula
 
-    var res = document.querySelector('.resultado');
+    var res = document.querySelector('.resultado'); //div onde as informações irão aparecer
 
-    res.innerHTML = `<p>O seu resultado é <b>${total}</b></p> <br> 
+	var clas; // Declaração de variavel para a classificação
+
+	if(imc <= 18.4){
+		console.log('Magreza');
+		clas = 'Magreza';
+	}
+	else if(imc >= 18.5 && imc <= 24.9){
+		console.log('Normal');
+		clas = 'Normal';
+	}
+	else if(imc >= 25,0 && imc <= 29.9){
+		console.log('SobrePeso');
+		clas = 'SobrePeso';
+	}
+	else if(imc >= 30.0 && imc <= 39,9){
+		console.log('Obesidade');
+		clas = 'Obesidade';
+	}
+	else{
+		console.log('Obesidade Grave');
+		clas = 'Obesidade Grave';
+	}
+
+	//Colocando dentro da div as informações com o innerHTML que permite colocar codigos html 
+    res.innerHTML = `<p>O seu resultado é <b>${total}</b> e sua classificação é <b>${clas}</b></p> <br> 
                  <table class="table-calc" cellspacing="0">
 
 					<thead>
@@ -59,5 +83,7 @@ function calcular(){
 				</table>
 
                     `
-    console.log(imc);
+
+	console.log(imc);
+
 }
