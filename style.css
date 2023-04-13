@@ -54,7 +54,7 @@ thead tr td {
     background: #6959CD;
     color: #fff;
     border-radius: 10px;
-    padding: 10px 20px;
+    padding: 8px 20px;
     text-transform: uppercase;
 }
 
@@ -77,4 +77,12 @@ table {
 
 label, p{
     font-size: large;
+}
+
+
+@media (max-width: 600px){ /*max width é que o quando o valor */
+    section{
+        width: 490px;
+        padding: 12px;
+    }
 }
