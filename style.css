@@ -60,7 +60,7 @@ thead tr td {
 
 tbody tr td {
     color: #707070;
-    padding: 8px 20px;
+    padding: 10px 20px;
     text-transform: uppercase;
     border-bottom: 1px solid #dee2e7;
 }
@@ -70,24 +70,13 @@ td {
     vertical-align: inherit;
 }
 
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-label, p{
-    font-size: large;
-}
-
-
 @media (max-width: 600px){ /*max width é que o quando o valor */
     body{
-        font-size: smaller;
+        font-size: small;
     }
     section{
-        width: 345px;
+        width: 330px;
         padding: 15px;
-        
     }
     tbody tr td{
         padding: 5px 5px;
