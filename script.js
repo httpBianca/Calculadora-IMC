@@ -19,9 +19,9 @@ function calcular(){
 		console.log('Normal');
 		clas = 'Normal';
 	}
-	else if(imc >= 25,0 && imc <= 29.9){
-		console.log('SobrePeso');
-		clas = 'SobrePeso';
+	else if(imc >= 25.0 && imc <= 29.9){
+		console.log('Sobrepeso');
+		clas = 'Sobrepeso';
 	}
 	else if(imc >= 30.0 && imc <= 39,9){
 		console.log('Obesidade');
